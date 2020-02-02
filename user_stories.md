@@ -1,5 +1,15 @@
 # User Stories
 
+Group 6H:
+
+*Jóhann Bjarki Hall*
+
+*Jóhannes Nordal*
+
+*Magnús Þór Valdimarsson*
+
+*Þorri Már Sigurþórsson*
+
 ### 1. Book a room
 
 As a potential hotel guest, I would like to 

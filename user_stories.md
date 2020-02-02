@@ -51,9 +51,21 @@ so I can plan my trip with more ease.
 
 ### 11. Hotels Within a Locations Given Radius, Selected From a Map
 
+As a buissness man, I want to know if hotel is 
+located near the location of my meeting, to 
+ensure I won‘t have to travel long before the meeting.
+
 ### 12. Filter to Allows Travellers to Choose Their Preferences
 
+As a user, I want to be able to filter out 
+all the hotels I don‘t want to book so it 
+won‘t take a long time to find one I want to book.
+
 ### 13. Report Scam
+
+As a owner of the website, I wan‘t users to be 
+able to report to me if there is a fake hotel profile 
+on my website, to ensure users won‘t get ripped off.
 
 ### 14. 3D View
 

@@ -2,6 +2,10 @@
 
 ### 1. Book room
 
+As a potential hotel guest, I would like to 
+be able to book a room online, 
+so I can book at at my own leisure.
+
 ### 2. Cancel Booking
 
 As a potential guest, I would like to be able 
@@ -17,6 +21,11 @@ smaller room.
 
 ### 4. Pay online
 
+As a potential guest, I would prefer to 
+be able to pay online in advance. 
+I find it much more comfortable 
+to have everything settled before hand.
+
 ### 5. Travel Agency Booking
 
 As a travel agent, I would like to be able to 
@@ -26,7 +35,7 @@ I can manage their bookings for them.
 
 ### 6. Create User Account 
 
-As a customer, I want to be able to create 
+As a customer, I want to be able to create a
 user account, so that my experience is personalized.
 
 ### 7. Hotel Managers Can Update and Modify
@@ -43,29 +52,34 @@ and elaborate on the bad ones.
 
 ### 9. Hotel Managers Can View Booking Statistics
 
+As a hotel manager, I want to be able to see 
+how many rooms where booked last month or 
+the months before, so I can estimate how many 
+employees I'll need at any given time.
+
 ### 10. Landmarks Near a Hotel
 
-As a customer, I want the site to show landmarks 
-and interesting places near the hotels, 
+As a customer, I want the website to show landmarks 
+and interesting places near the hotel, 
 so I can plan my trip with more ease.
 
 ### 11. Hotels Within a Locations Given Radius, Selected From a Map
 
-As a buissness man, I want to know if hotel is 
-located near the location of my meeting, to 
-ensure I won‘t have to travel long before the meeting.
+As a business man, I want to know whether a hotel is near
+the location of a meeting, to prevent long commutes.
 
 ### 12. Filter to Allows Travellers to Choose Their Preferences
 
-As a user, I want to be able to filter out 
-all the hotels I don‘t want to book so it 
-won‘t take a long time to find one I want to book.
+As a potential hotel guest, I would like to be 
+able to search for hotels that suit my needs 
+by filtering out those that don't fit a specific criteria, 
+inorder to quickly find the ideal hotel.
 
 ### 13. Report Scam
 
-As a owner of the website, I wan‘t users to be 
-able to report to me if there is a fake hotel profile 
-on my website, to ensure users won‘t get ripped off.
+As an owner of the website, I want users to be 
+able to report any fake hotel profiles, 
+to ensure users won‘t get ripped off.
 
 ### 14. 3D View
 

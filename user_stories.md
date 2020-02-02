@@ -1,6 +1,6 @@
 # User Stories
 
-### 1. Book room
+### 1. Book a room
 
 As a potential hotel guest, I would like to 
 be able to book a room online, 

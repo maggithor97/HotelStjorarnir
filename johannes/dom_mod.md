@@ -1,10 +1,17 @@
-# UML Class Diagram
+# A2: Domain Model
+
+- *Jóhann Bjarki Hall*
+- *Jóhannes Nordal*
+- *Magnús Þór Valdimarsson*
+- *Þorri Már Sigurþórsson*
+
+## UML Class Diagram
 
 The arrowhead to `Hotel` from
 `Availability` has `0..1` next 
 to it because `hotel` is an
 optional parameter to `Availability`. 
-We felt this was the mose accurate
+We felt this was the most accurate
 way to represent that relationship,
 hopefully that assumption is 
 appropriate. It should also
@@ -14,4 +21,4 @@ and is meant to be a placeholder
 for any sort of boolean preference 
 variable, e.g., `gym` in `Hotel` etc.
 
-![Domain Model](dom_mod.png)
+![UML Class Digram](dom_mod.png)

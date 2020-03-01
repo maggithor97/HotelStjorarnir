@@ -5,7 +5,6 @@
 | -hotelType  |
 | -hotelId    |
 | -room[]     |
-| -booking[]  |
 | -starRating |
 | -location   |
 | -filters    |

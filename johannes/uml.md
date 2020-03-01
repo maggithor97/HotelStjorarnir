@@ -21,6 +21,7 @@
 | -bedCount      |
 | -pricePerNight |
 | -hotelId       |
+| -filters       |
 +----------------+
 
 +-------------+

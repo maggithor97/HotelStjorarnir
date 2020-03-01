@@ -1,22 +1,22 @@
  Hotel      
 ------------
--hotelType  
--hotelId    
--room[]     
--starRating 
--location   
--filters    
+- hotelType  
+- hotelId    
+- room[]     
+- starRating 
+- location   
+- filters    
 
  Room          
 ---------------
--roomType      
--roomId        
--roomCount     
--bedType       
--bedCount      
--pricePerNight 
--hotelId       
--filters       
+-- roomType      
+-- roomId        
+-- roomCount     
+-- bedType       
+-- bedCount      
+-- pricePerNight 
+-- hotelId       
+-- filters       
 
  Booking    
 ------------

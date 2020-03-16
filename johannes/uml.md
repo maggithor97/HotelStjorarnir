@@ -3,40 +3,48 @@
 |  Hotel      |
 +-------------+
 | -hotelType  |
-| -hotelId    |
+| -name       |
 | -room[]     |
 | -starRating |
-| -location   |
+| -city       |
+| -address    |
 | -filters    |
 +-------------+
 
 +----------------+
 |  Room          |
 +----------------+
+| -roomNumber    |
 | -roomType      |
-| -roomId        |
-| -roomCount     |
-| -bedType       |
-| -bedCount      |
 | -pricePerNight |
-| -hotelId       |
+| -hotel         |
 | -filters       |
 +----------------+
 
-+-------------+
-|  Booking    |
-+-------------+
-| -hotelId    |
-| -roomId     |
-| -checkIn    |
-| -checkOut   |
-| -bookingId  |
-| -firstName  |
-| -lastName   |
-| -middleName |
-| -email      |
-| -hasPaid    |
-+-------------+
++----------------+
+|  Booking       |
++----------------+
+| -hotel         |
+| -room          |
+| -checkIn       |
+| -checkOut      |
+| -bookingRef    |
+| -firstName     |
+| -lastName      |
+| -middleName    |
+| -email         |
++----------------+
+| +getName       |
+| +setName       |
+| +getHotel      |
+| +setHotel      |
+| +getRoom       |
+| +setRoom       |
+| +setDates      |
+| +getEmail      |
+| +setEmail      |
+| +getBookingRef |
++----------------+
 
 +------------------+
 |  User            |
@@ -64,18 +72,11 @@
 | +setPassword     |
 +------------------+
 
-+----------------+
-|  Availability  |
-+----------------+ 
-| -roomId[]      |
-| -checkIn       |
-| -checkOut      |
-| -hotelId       |
-| -location      |
-+----------------+
-| +setDates      |
-| +setHotel      |
-| +setLocation   |
-| +getRooms      |
-+----------------+
++-------------+
+|  Occupancy  |
++-------------+ 
+| -roomId[]   |
+| -checkIn    |
+| -checkOut   |
++-------------+
 ```

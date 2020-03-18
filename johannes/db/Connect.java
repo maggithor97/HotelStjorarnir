@@ -45,7 +45,9 @@ public class Connect
                     
                     String sel = "SELECT HotelID " + 
                                  "FROM HOTELS " +
-                                 "WHERE Name = '" + name + "'";
+                                 "WHERE Name = '" + name + "' AND " +
+                                 "City = '" + city + "' AND " + 
+                                 "Address = '" + addr + "'";
 
                     ResultSet rs = stmt.executeQuery(sel);
                     int hotelID = Integer.parseInt(rs.getString("HotelID"));

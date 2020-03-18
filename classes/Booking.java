@@ -8,6 +8,10 @@ public class Booking {
     private String lastName;
     private String email;
 
+    public Booking() {
+        
+    }
+
 /** Getters and setters */
     public int getReferenceNr() {
         return this.referenceNr;

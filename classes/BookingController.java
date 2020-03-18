@@ -1,27 +1,13 @@
 public class BookingController {
     private Booking booking;
+    private BookingDB bookingDB;
 
     public BookingController() {
-        booking = New Booking();
+        this.booking = New Booking();
+        this.bookingDB = New BookingDB();
     }
 
-    public addBooking(....){
 
-    }
-
-    public cancelBooking(Booking booking) {
-
-    }
-
-    public modifyBooking(Booking booking) {
-
-    }
-    public getBooking (int referenceNr) {
-
-    }
-    public getAllBookings(Hotel hotel) {
-        
-    }
 
     public static void main(String[] args) {
 

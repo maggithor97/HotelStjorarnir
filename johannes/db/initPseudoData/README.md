@@ -5,8 +5,7 @@ búa til og hlaða inn gögnum í
 gagnagrunninn, sem og listum af
 úttökum úr þessum forritum.
 Gagnagrunnurinn sem vísað er í 
-textanum er í möppunni hér í
-foreldris möppunni `db/` og 
+textanum er í foreldris möppunni `db/` og 
 heitir `hotels.db`. Það er búið 
 að framkvæma allar aðgerðir á honum 
 sem er lýst hér að neðan.

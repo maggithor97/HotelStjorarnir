@@ -52,10 +52,10 @@ semí-kommu:
 
 Dagsetningarnar eiga ekki að spanna
 meira en tvær vikur og eru allar innan ársins
-2020 fyrir utan örfáar í loka desember og
+2020 fyrir utan örfáar í lok desember og
 byrjun janúar.
 
-Forrituð tekur eitt viðfang, sem er 
+Forritið tekur eitt viðfang, sem er 
 fjöldi paraðra dagsetninga:
 
 ```

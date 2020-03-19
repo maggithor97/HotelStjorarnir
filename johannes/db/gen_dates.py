@@ -9,43 +9,43 @@ def genDates ():
     if month == 1:
         day = random.randrange(1,32)
         checkIn = [2020, month, day]
-        checkOut = genCheckOut(month, 31 ,day)
+        checkOut = genCheckOut(month, 32 ,day)
     elif month == 2:
         day = random.randrange(1,29)
         checkIn = [2020, month, day]
-        checkOut = genCheckOut(month, 28 ,day)
+        checkOut = genCheckOut(month, 29 ,day)
     elif month == 3:
         day = random.randrange(1,32)
         checkIn = [2020, month, day]
-        checkOut = genCheckOut(month, 31 ,day)
+        checkOut = genCheckOut(month, 32 ,day)
     elif month == 4:
         day = random.randrange(1,31)
         checkIn = [2020, month, day]
-        checkOut = genCheckOut(month, 30 ,day)
+        checkOut = genCheckOut(month, 31 ,day)
     elif month == 5:
         day = random.randrange(1,32)
         checkIn = [2020, month, day]
-        checkOut = genCheckOut(month, 31 ,day)
+        checkOut = genCheckOut(month, 32 ,day)
     elif month == 6:
         day = random.randrange(1,31)
         checkIn = [2020, month, day]
-        checkOut = genCheckOut(month, 30 ,day)
+        checkOut = genCheckOut(month, 31 ,day)
     elif month == 7:
         day = random.randrange(1,32)
         checkIn = [2020, month, day]
-        checkOut = genCheckOut(month, 31 ,day)
+        checkOut = genCheckOut(month, 32 ,day)
     elif month == 8:
         day = random.randrange(1,32)
         checkIn = [2020, month, day]
-        checkOut = genCheckOut(month, 31 ,day)
+        checkOut = genCheckOut(month, 32 ,day)
     elif month == 9:
         day = random.randrange(1,31)
         checkIn = [2020, month, day]
-        checkOut = genCheckOut(month, 30 ,day)
+        checkOut = genCheckOut(month, 31 ,day)
     elif month == 10:
         day = random.randrange(1,32)
         checkIn = [2020, month, day]
-        checkOut = genCheckOut(month, 31 ,day)
+        checkOut = genCheckOut(month, 32 ,day)
     elif month == 11:
         day = random.randrange(1,31)
         checkIn = [2020, month, day]
@@ -53,13 +53,15 @@ def genDates ():
     elif month == 12:
         day = random.randrange(1,32)
         checkIn = [2020, month, day]
-        checkOut = genCheckOut(month, 31 ,day)
+        checkOut = genCheckOut(month, 32 ,day)
 
     return [checkIn, checkOut]
 
 def genCheckOut(month, daysInMonth, checkIn):
     stay = random.randrange(1,15)
     checkOut = (checkIn + stay) % daysInMonth
+    if checkOut == 0:
+        checkOut = checkOut + 1
     if checkOut < checkIn:
         month = month + 1
     if month > 12:

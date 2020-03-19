@@ -4,6 +4,12 @@
 búa til og hlaða inn gögnum í 
 gagnagrunninn, sem og listum af
 úttökum úr þessum forritum.
+Gagnagrunnurinn sem vísað er í 
+textanum er í möppunni hér í
+foreldris möppunni `db/` og 
+heitir `hotels.db`. Það er búið 
+að framkvæma allar aðgerðir á honum 
+sem er lýst hér að neðan.
 
 ### Listar af hótelum með herbergjum
 
@@ -81,7 +87,7 @@ af skjölunum í `hotels` möppunni.
 `Connect.java` notar `list_of_hotels`
 til að finna og ná í upplýsingarnar úr
 skjölunum fyrir hvert og eitt hótel í 
-`hotels` möppunni og hlaða þeim inn í 
+`hotels` möppunni og hlaður þeim inn í 
 gagnagrunninn. 
 
 Ég er ekki búinn að útfæra forrit sem

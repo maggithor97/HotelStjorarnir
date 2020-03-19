@@ -27,3 +27,15 @@ CREATE TEMPORARY TABLE R AS
 SELECT *
 FROM R
 WHERE RoomID NOT IN O;
+
+SELECT * 
+FROM ROOMS 
+WHERE rHotelID = 
+    (SELECT HotelID 
+    FROM HOTELS 
+    WHERE City = 'Akureyri') 
+    AND RoomID NOT IN 
+        (SELECT oRoomID 
+        FROM OCCUPANCY 
+        WHERE oCheckIn BETWEEN '2020-05-04' AND '2020-05-15' 
+        OR oCheckOut BETWEEN '2020-05-04' AND '2020-05-15');

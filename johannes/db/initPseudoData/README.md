@@ -76,7 +76,7 @@ af skjölunum í `hotels` möppunni.
   af dagsetningum sem er úttak úr
   `gen_dates.py`.
 
-### Hvernig eru gögnunum komið í gagnagrunninn?
+### Hvernig er gögnunum komið í gagnagrunninn?
 
 `Connect.java` notar `list_of_hotels`
 til að finna og ná í upplýsingarnar úr

@@ -11,7 +11,7 @@ public class FindRooms
             conn = DriverManager.getConnection(url);
             
             String s = 
-                "SELECT COUNT(1) FROM ROOMS WHERE rHotelID = " +
+                "SELECT COUNT(1) FROM ROOMS WHERE rHotelID IN " +
                 "(SELECT HotelID FROM HOTELS WHERE City = ?) " +
                 "AND RoomID NOT IN " +
                 "(SELECT oRoomID FROM OCCUPANCY " +
@@ -41,7 +41,8 @@ public class FindRooms
                 System.out.print(rs.getInt("rHotelID") + " ");
                 System.out.print(rs.getInt("Price") + " ");
                 System.out.println();
-            }*/
+            }
+            */
             rs.close();
         }
         catch (SQLException e) 

@@ -35,7 +35,6 @@ public class Occupancy
                 while (scanner.hasNextLine())
                 {
                     String dates = scanner.nextLine();
-                    System.out.println(dates);
                     st = new StringTokenizer(dates);
                     String checkIn = st.nextToken(";");
                     String checkOut = st.nextToken(";");
@@ -45,10 +44,11 @@ public class Occupancy
                     while (looking && lim < numOfRoomIDs)
                     { 
                         int i = r.nextInt(numOfRoomIDs); 
-                        String checkBooking = "SELECT COUNT(1) FROM OCCUPANCY WHERE " +
-                                        "oRoomID = " + i + " AND " +
-                                        "oCheckIn BETWEEN '" + checkIn + "' AND '" + checkOut + "' AND " +
-                                        "oCheckOut BETWEEN '" + checkIn + "' AND '" + checkOut + "'";
+                        String checkBooking = 
+                            "SELECT COUNT(1) FROM OCCUPANCY WHERE " +
+                            "oRoomID = " + i + " AND " +
+                            "oCheckIn BETWEEN '" + checkIn + "' AND '" + checkOut + "' AND " +
+                            "oCheckOut BETWEEN '" + checkIn + "' AND '" + checkOut + "'";
                         rs = stmt.executeQuery(checkBooking);
                         int isBooked = rs.getInt("COUNT(1)");
                         if (isBooked == 0)

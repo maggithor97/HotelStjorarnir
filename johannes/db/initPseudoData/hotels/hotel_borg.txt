@@ -1,0 +1,18 @@
+Hótel Borg;Reykjavík;Pósthússtræti
+1-bedroom;100;7500
+1-bedroom;101;7500
+2-bedroom;200;10000
+2-bedroom;201;10000
+2-bedroom;202;10000
+2-bedroom;203;10000
+2-bedroom;204;10000
+2-bedroom;205;10000
+2-bedroom;206;10000
+2-bedroom;207;10000
+2-bedroom;208;10000
+2-bedroom;209;10000
+3-bedroom;300;25000
+3-bedroom;301;25000
+3-bedroom;302;25000
+3-bedroom;303;25000
+3-bedroom;304;25000

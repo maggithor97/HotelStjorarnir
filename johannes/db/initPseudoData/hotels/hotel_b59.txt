@@ -1,0 +1,19 @@
+Hótel B59;Borgarnes;Borgarbraut
+1-bedroom;100;5000
+1-bedroom;101;5000
+1-bedroom;102;5000
+2-bedroom;200;15000
+2-bedroom;201;15000
+2-bedroom;202;15000
+2-bedroom;203;15000
+2-bedroom;204;15000
+3-bedroom;300;25000
+3-bedroom;301;25000
+3-bedroom;302;25000
+3-bedroom;303;25000
+3-bedroom;304;25000
+3-bedroom;305;25000
+3-bedroom;306;25000
+3-bedroom;307;25000
+3-bedroom;308;25000
+3-bedroom;309;25000

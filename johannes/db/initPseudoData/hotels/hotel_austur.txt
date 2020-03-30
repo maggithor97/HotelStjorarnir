@@ -1,0 +1,6 @@
+Hótel Austur;Reyðarfjörður;Budareyri
+1-bedroom;100;7500
+1-bedroom;101;7500
+2-bedroom;200;15000
+2-bedroom;201;15000
+3-bedroom;300;25000

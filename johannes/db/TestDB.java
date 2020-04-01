@@ -120,14 +120,12 @@ public class TestDB
     @Test
     public void testRooms()
     {
-        Room[] room = hotel[0].getRooms();        
         assertEquals(1, room.length);
     }
 
     @Test
     public void testRoomType()
     {
-        Room[] room = hotel[0].getRooms();
         String roomType = room[0].getRoomType();
         assertEquals("2-bedroom", roomType);
     }
@@ -135,7 +133,6 @@ public class TestDB
     @Test
     public void testRoomNumber()
     {
-        Room[] room = hotel[0].getRooms();
         int roomNumber = room[0].getRoomNumber();
         assertEquals(101, roomNumber);
     }
@@ -143,7 +140,6 @@ public class TestDB
     @Test
     public void testPrice()
     {
-        Room[] room = hotel[0].getRooms();
         int price = room[0].getPrice();
         assertEquals(20000, price);
     }

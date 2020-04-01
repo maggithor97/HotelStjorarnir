@@ -25,12 +25,12 @@ public class Connect
                     "VALUES (?,?,?,?)");
             try 
             {
-                Scanner listOfHotels = new Scanner(new File("list_of_hotels"));
+                Scanner listOfHotels = new Scanner(new File("list_of_hotels"), "UTF-8");
                 StringTokenizer st;
                 while (listOfHotels.hasNextLine())
                 {
                     String path = listOfHotels.nextLine();
-                    Scanner hotel = new Scanner(new File(path));
+                    Scanner hotel = new Scanner(new File(path), "UTF-8");
                     String s = hotel.nextLine();
                     
                     st = new StringTokenizer(s);
@@ -49,6 +49,7 @@ public class Connect
                                  "City = '" + city + "' AND " + 
                                  "Address = '" + addr + "'";
 
+                    System.err.println(name);
                     ResultSet rs = stmt.executeQuery(sel);
                     int hotelID = Integer.parseInt(rs.getString("HotelID"));
                     while (hotel.hasNextLine())
@@ -68,10 +69,15 @@ public class Connect
                     }
                 }
             }
-            catch (Exception e) { System.err.println(e.getMessage()); }
+            catch (Exception e) 
+            {      
+                System.err.println("Yo");
+                System.err.println(e.getMessage()); 
+            }
         }
         catch (SQLException e)
         {
+            System.err.println("Hey");
             System.out.println(e.getMessage());
         }
         finally 

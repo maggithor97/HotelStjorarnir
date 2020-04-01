@@ -3,12 +3,9 @@ import java.sql.DriverManager;
 import org.junit.*;
 import static org.junit.Assert.*;
 
-public class TestDB
+public class TestHotelDB
 {
     private HotelDB hotelDB;
-    private Hotel[] hotel;
-    private Room[] room;
-    private int hotelID;
 
     @Before
     public void setUp()
@@ -22,18 +19,6 @@ public class TestDB
             String s = "INSERT INTO HOTELS (Name, City, Address) " + 
                        "VALUES ('Hotel Somewhere', " + 
                        "'Somewhere City', 'Somewhere Street')";
-            stmt.executeUpdate(s);
-            stmt = null;
-
-            stmt = conn.createStatement();
-            s = "SELECT HotelID FROM HOTELS WHERE City = 'Somewhere City'";
-            ResultSet rs = stmt.executeQuery(s);
-            hotelID = rs.getInt(1); 
-            stmt = null;
-
-            stmt = conn.createStatement();
-            s = "INSERT INTO ROOMS (RoomType, RoomNum, rHotelID, Price) " +
-                "VALUES ('2-bedroom', 101, " + hotelID + ", 20000)";
             stmt.executeUpdate(s);
         }
         catch (SQLException e)
@@ -53,9 +38,8 @@ public class TestDB
             }
         }
 
-        hotelDB = new HotelDB("Somewhere City");
-        hotel = hotelDB.getHotels();
-        room = hotel[0].getRooms();        
+        hotelDB = new HotelDB();
+        hotelDB.findHotel("Somewhere City");
     }
 
     @After
@@ -99,56 +83,42 @@ public class TestDB
     @Test
     public void testName()
     {
-        String name = hotel[0].getName();
-        assertEquals("Hotel Somewhere", name);
+        assertEquals("Hotel Somewhere", hotelDB.getName());
+    }
+
+    @Test 
+    public void testWrongName()
+    {
+        assertEquals("Hotel Nowhere", hotelDB.getName());
     }
 
     @Test
     public void testCity()
     {
-        String city = hotel[0].getCity();
-        assertEquals("Somewhere City", city);
+        assertEquals("Somewhere City", hotelDB.getCity());
+    }
+
+    @Test
+    public void testWrongCity()
+    {
+        assertEquals("Nowhere City", hotelDB.getName());
     }
 
     @Test
     public void testAddress()
     {
-        String address = hotel[0].getAddress();
-        assertEquals("Somewhere Street", address);
+        assertEquals("Somewhere Street", hotelDB.getAddress());
     }
 
     @Test
-    public void testRooms()
+    public void testWrongAddress()
     {
-        assertEquals(1, room.length);
+        assertEquals("Nowhere Street", hotelDB.getAddress());
     }
 
     @Test
-    public void testRoomType()
+    public void testWrongParam()
     {
-        String roomType = room[0].getRoomType();
-        assertEquals("2-bedroom", roomType);
-    }
-
-    @Test
-    public void testRoomNumber()
-    {
-        int roomNumber = room[0].getRoomNumber();
-        assertEquals(101, roomNumber);
-    }
-
-    @Test
-    public void testPrice()
-    {
-        int price = room[0].getPrice();
-        assertEquals(20000, price);
-    }
-
-    @Test
-    public void testRoomsInHotelInRoom()
-    {
-        Hotel hotelInRoom = room[0].getHotel();
-        Room[] roomsInHotelInRoom = hotelInRoom.getRooms();
-        assertEquals(room[0], roomsInHotelInRoom[0]);
+        assertEquals(1000, hotelDB.getName());
     }
 }

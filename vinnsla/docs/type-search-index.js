@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"hs.res","l":"Booking"},{"p":"hs.db","l":"BookingDB"},{"p":"hs.res","l":"Hotel"},{"p":"hs.db","l":"HotelDB"},{"p":"hs.res","l":"Room"},{"p":"hs.db","l":"RoomDB"}]

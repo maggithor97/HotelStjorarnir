@@ -1,10 +1,10 @@
-To compile, run:
+Til að þýða:
 
 ```
 javac -d ../ hs.res/*.java hs.db/*.java
 ```
 
-To make javadocs, run:
+Til að búa til javadoc:
 
 ```
 javadoc -d ../ hs.res/*.java hs.db/*.java

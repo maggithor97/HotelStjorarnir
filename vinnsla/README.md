@@ -11,7 +11,7 @@ búið er að skipta klösunum upp í
 gagnagrunns klasa og niðurstöðu
 klasa, þ.e. klasar sem halda utanum
 gögn sem koma úr gagnagrunninum. 
-Hér er [APINN](johannesnordal.github.io)
+Hér er [APINN](https://johannesnordal.github.io/docs/index.html)
 fyrir alla klasanna. 
 
 `jar` inniheldur allar JAR skrár sem 

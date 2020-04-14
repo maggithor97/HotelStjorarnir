@@ -9,6 +9,7 @@ public class BookingDB
     private int ref;
 
     /**
+    *Use this contructor to book a room.
     *@param room room to be booked
     *@param checkIn check in date, YYYY-MM-DD
     *@param checkOut check out date, YYYY-MM-DD
@@ -99,6 +100,8 @@ public class BookingDB
     }
 
     /**
+    *Use this constructor to fetch an existing 
+    *booking from the database.
     *@param ref booking's unique reference number
     */
     public BookingDB (int ref)
